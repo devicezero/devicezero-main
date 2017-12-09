@@ -308,3 +308,11 @@ ion {
     text-shadow: none;
     background: rgb(136,196,37);
 }
+#imprint-link {
+  cursor: pointer;
+}
+#imprint-text {
+  display: none;
+  color: white;
+  text-align: left;
+}

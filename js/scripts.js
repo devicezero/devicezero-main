@@ -36,4 +36,9 @@ $(function () {
         }
         return false;
     }
+
+    $('#imprint-link').bind('click', function (event) {
+      $('#imprint-text').css({"display": 'block'});
+      event.preventDefault();
+    });
 });
