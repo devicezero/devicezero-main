@@ -446,13 +446,6 @@ Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports &uum
         <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11722448-3"></script>
       <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('set', 'anonymizeIp', true);
-        gtag('config', 'UA-11722448-3');
-
-
         var gaProperty = 'UA-11722448-3';
         var disableStr = 'ga-disable-' + gaProperty;
         if (document.cookie.indexOf(disableStr + '=true') > -1) {
@@ -464,6 +457,15 @@ Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports &uum
           window[disableStr] = true;
           alert("opt-out für google analytics erfolgreich");
         }
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('set', 'anonymizeIp', true);
+        gtag('config', 'UA-11722448-3');
+
+
+
       </script>
     </body>
 </html>
