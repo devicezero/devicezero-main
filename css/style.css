@@ -316,3 +316,7 @@ ion {
   color: white;
   text-align: left;
 }
+
+.sticky-navigation {
+  background:rgb(136,196,37);
+}
