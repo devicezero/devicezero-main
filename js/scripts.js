@@ -4,14 +4,14 @@
  */
 $(function () {
   //init
-  init();
+  // init();
   //init wow effects
   new WOW().init();
 
   //scroll menu
-  $(window).scroll(function () {
-    init();
-  });
+  // $(window).scroll(function () {
+  //   init();
+  // });
 
   //page scroll
   $('a.page-scroll').bind('click', function (event) {
