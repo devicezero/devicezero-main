@@ -320,3 +320,29 @@ ion {
 .sticky-navigation {
   background:rgb(136,196,37);
 }
+
+#cookieconsent {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+}
+
+#cookieconsent small {
+  color: #ccc;
+}
+
+#cookieconsent .btn-primary {
+  position: fixed;
+  right: 5px;
+  bottom: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+#cookieconsent.hidden {
+  display: none;
+}

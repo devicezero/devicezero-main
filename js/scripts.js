@@ -1,7 +1,3 @@
-/*
- Created on : Jul 4, 2017, 12:43:10 AM
- Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
- */
 $(function () {
   //init
   // init();
@@ -41,4 +37,14 @@ $(function () {
     $('#imprint-text').css({'display': 'block'});
     event.preventDefault();
   });
+
+
+  if (!localStorage.getItem('cookieconsent')) {
+    $('#cookieconsent').removeClass('hidden');
+  }
 });
+
+var setCookieconsent = function() {
+  localStorage.setItem('cookieconsent', true);
+  $('#cookieconsent').addClass('hidden');
+}
