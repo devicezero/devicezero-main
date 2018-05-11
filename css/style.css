@@ -37,10 +37,10 @@ b, strong{
     font-weight: 700;
 }
 .navbar-inverse .navbar-nav .nav-link, .navbar .navbar-brand, .navbar-toggler span {
-    color: #fff;
+    color: rgb(136,196,37);
 }
 .navbar .nav-item .active, .navbar .nav-link:hover,.navbar .nav-link:focus, .navbar .navbar-brand:hover{
-    color: #fff !important;
+    color: rgb(136,196,37) !important;
 }
 .sticky-navigation{
     top: 0px;
@@ -318,7 +318,24 @@ ion {
 }
 
 .sticky-navigation {
-  background:rgb(136,196,37);
+  background:white;
+  color: rgb(136,196,37) !important;
+  border-bottom: 1px solid #ccc;
+}
+
+.hero-heading {
+  visibility: visible;
+  position: fixed;
+  top: 5px;
+  transition: all .1s;
+}
+
+.navbar-toggler:not(.collapsed) + .hero-heading {
+  visibility: hidden;
+}
+
+.sticky-navigation .logo {
+  max-width: 150px;
 }
 
 #cookieconsent {
