@@ -32,6 +32,5 @@ document.getElementById("close").addEventListener("click", function(){
 });
 
 if (!localStorage.getItem('cookieconsent')) {
-  document.getElementById('nav_links').style.display = 'none';
   document.getElementById('cookieconsent').classList.remove('hidden');
 };
