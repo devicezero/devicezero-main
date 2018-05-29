@@ -1,207 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Jonas Kröger - remote product manager</title>
-        <meta name="description" content="I translate between humans and developers." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="../img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <!--Bootstrap 4-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <!--icons-->
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-        <link rel="stylesheet" href="../css/style.css" />
-    </head>
-    <body>
-        <!--header-->
-        <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top sticky-navigation">
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ion-grid icon-sm"></span>
-            </button>
-            <a class="navbar-brand hero-heading" href="/">
-              <img class="logo" src="../img/devicezero_logo.svg" alt="devicezero">
-            </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="../index.html#main">Main page</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="../index.html#services">More services</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link" href="//blog.devicezero.de">Blog</a>
-                    </li>
-                </ul>
+  <link rel="stylesheet" href="../assets/css/main.bundle.css">
+  <title>Jonas Kröger - remote product manager</title>
+</head>
+<body>
+  <nav>
+    <a href="#">
+      <img id="logo" src="../assets/img/devicezero_logo.svg" alt="devicezero">
+    </a>
+
+    <div>
+      <ul id="nav_links">
+        <li><a href="/">Main page</a></li>
+        <li><a href="../index.html#services">More services</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        <li><a href="//blog.devicezero.de" onclick="closeMenu()">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile_menu">
+      <i class="icon ion-ios-menu" ></i>
+      <span class="icon" id="open">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M432 176H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 272H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 368H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16z"/></svg>
+      </span>
+      <span class="icon" id="close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"/></svg>
+      </span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="column hero" id="hello-world">
+      <div>
+        <h2>Your website needs to be <span class="text_light">fast</span>!⚡️</h2>
+        <p>
+          Hi, I am <strong>Jonas!</strong>
+          I have over 15 years experience in creating web products and worked with companies of all sizes.
+          I build digital products since the age of 13. I still develop on the web, I consult web development processes, I manage engineers, designers and products.
+          My clients come from different areas: Retail, electronic manufacturers, food industry, chemical manufacturers, agencies, publishers and more. Just send me a message and ask for a full CV :)
+        </p>
+        <p>
+          People use products I built to manage <a target="_blank" rel="noopener" class="button" href="https://wfm.data-room.de/en">business workflows</a> or to <a target="_blank" rel="noopener" class="button" href="https://www.stehauf.io">communicate in remote teams</a>.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Why does performance matter?</h3>
+        <ul>
+          <li>It is part of your SEO ranking. (<a target="_blank" rel="noopener" href="https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html">source</a>)</li>
+          <li>Slow websites can cost you money, better performance can increase sales. (<a target="_blank" rel="noopener" href="https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales">source</a>)</li>
+          <li>Users do not want to wait. (<a target="_blank" rel="noopener" href="https://www.nngroup.com/articles/website-response-times/">source</a>).</li>
+          <li>The next billion users will not have high bandwidth and fast devices! (<a target="_blank" rel="noopener" href="https://www.blog.google/perspectives/caesar-sengupta/next-billion-users-are-future-internet/">source</a>)</li>
+        </ul>
+        <p>
+          Let me check your website for performance improvements. I'll explain my findings in an exclusive call and you will receive a written report which you can use in any way, no strings attached! I value transparency a lot, see my <a href="https://blog.devicezero.de/2018/04/04/values/">values</a> for more.
+        </p>
+        <a href="https://devicezero.typeform.com/to/LHKais" target="_blank" rel="noopener" class="button">Performance check for only 599$</a>
+      </div>
+    </section>
+  </div>
+
+<div class="contrast">
+  <div class="container">
+    <section id="services">
+      <h2 class="text_center">How is it done?</h2>
+      <p class="text_center">A short overview on the website performance check.</p>
+      <div class="column c33">
+        <div class="card">
+          <div class="text_center">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464.9 128H344.1c-8.3 0-15.1 6.6-15.1 14.8s6.8 14.8 15.1 14.8h83.7l-138 142.2-85.9-84.1c-2.9-2.8-6.6-4.3-10.7-4.3-4 0-7.8 1.5-10.7 4.3L36.2 358.8c-1.9 1.9-4.2 5.2-4.2 10.7 0 4.1 1.4 7.5 4.2 10.2 2.9 2.8 6.6 4.3 10.7 4.3 4 0 7.8-1.5 10.7-4.3L193.2 247l85.9 84.1c2.9 2.8 6.6 4.3 10.7 4.3 4 0 7.8-1.5 10.7-4.3l149.4-151.9v81.7c0 8.1 6.8 14.8 15.1 14.8s15.1-6.6 15.1-14.8V142.8c-.1-8.2-6.9-14.8-15.2-14.8z"/></svg>
+            </span>
+          </div>
+          <h3>KPIs</h3>
+          <p class="text_center">Modern KPIs do not only measure the pure technical side of a website but the real life impact on users.
+          While loading times or server response times are still important, KPIs like First Meaningful Paint, First Contentful Paint, Time To Interactive, Input Latency or Render Blocking Requests are much more meaningful.</p>
+        </div>
+        <div class="card">
+          <div class="text_center">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M277.6 246.9c-1.1-2-2.5-3.9-4.1-5.5l-18.4-18.2c-1.9-1.9-4.1-3.5-6.6-4.6-8.2-3.6-17.4-1.7-23.4 4.3-6.4 6.3-18.1 17.8-39.2 38.7-40.4 40-98.1 89.6-132 118.2-7.2 6.1-7.7 17-1.1 23.7L92 443.2c6.7 6.7 17.6 6.3 23.8-.9 29.4-34.6 79.5-92.3 119.4-131.8 20.5-20.2 32-31.8 38.5-38.2 6.5-6.6 8.3-16.7 3.9-25.4zM462.4 218.1l-34.5-34.2c-1.1-1.1-2.5-1.6-4-1.6-1.4 0-2.9.5-4 1.6-2.5 2.5-6.1 3.8-9.6 3.3-4.5-.5-9.3-1.9-12.4-4.9-7-6.9 1.1-20.5-5.1-29.2-6.2-8.7-16.1-19.8-23.2-26.9-7.1-7-35-33.7-82-52.9-16.6-6.8-32.8-9.3-47.3-9.3-26.5 0-47.4 8.5-54.8 15.3-5.5 5.1-11.2 14.1-3.1 14.1.7 0 1.5-.1 2.4-.2 4.5-.7 13.3-1.5 23.4-1.5 15.7 0 34.5 2.1 44.6 10.1 16.3 13.1 29.8 30.6 30.9 53.2.8 16.8-3.4 28.2-18.7 45.5-2.8 3.2-2.6 8 .4 10.9l19.2 19.2c3.1 3.1 8.1 3.1 11.2.1 14-13.6 22.1-20.2 31.3-22.7 4-1.1 8.4-1.6 12.8-1.6 9.7 0 19.2 2.2 23.6 4.6 1.1.6 2.1 1.4 3.1 2.4 6.5 6.6 6.1 17.4-.5 23.9l-2 1.9c-2.2 2.2-2.2 5.7 0 7.9l34.5 34.2c1.1 1.1 2.5 1.6 4 1.6 1.4 0 2.9-.5 4-1.6l55.8-55.2c2.1-2.3 2.1-5.8 0-8z"/></svg>
+            </span>
+          </div>
+          <h3>Tools</h3>
+          <p class="text_center">I use tools like Google Lighthouse, Google Analytics, Webpagetest, Calibre and others to measure performance.
+          I do advise to implement those tools in your website development process to make sure your website stays fast and crispy in the future as well.</p>
+        </div>
+        <div class="card">
+          <div class="text_center">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M376.2 224H268l52.4-186.9c.9-4.5-4.6-7.1-7.2-3.4L129.5 274.6c-3.8 5.6-.2 13.4 6.3 13.4H244l-52.4 186.9c-.9 4.5 4.6 7.1 7.2 3.4l183.7-240.8c3.7-5.7.2-13.5-6.3-13.5z"/></svg>
+            </span>
+          </div>
+          <h3>Improvement</h3>
+          <p class="text_center">Based on the the performance report I will give practical tips and guidelines on how to improve both the current state of your website as well as an approach to continously integrate performance measurements and improvements into your development workflow.
+          Those improvements can be sourced in different layers of your infrastructre (CDN, Webserver, Load Balancing, JavaScript compiling, CSS generating, etc.).</p>
+        </div>
+      </div>
+      <p class="text_center"><a href="https://devicezero.typeform.com/to/LHKais" target="_blank" rel="noopener" class="button">Performance check for only 599$</a></p>
+    </section>
+  </div>
+  </div>
+
+    <div class="container">
+      <section id="contact">
+        <h2 class="text_center">Contact</h2>
+          <div class="column c50">
+            <div class="text_center">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><circle cx="416" cy="152" r="48"/><path d="M416 218.5c-5.4 0-10.6-.7-15.6-1.9L353 264.9c-.8.8-.8 2 0 2.8l75.3 80.2c5.1 5.1 5.1 13.3 0 18.4-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8l-75-79.9c-.8-.8-2.1-.8-2.9 0L313.7 305c-15.3 15.5-35.6 24.1-57.4 24.2-22.1.1-43.1-9.2-58.6-24.9l-17.6-17.9c-.8-.8-2.1-.8-2.9 0l-75 79.9c-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8c-5.1-5.1-5.1-13.3 0-18.4l75.3-80.2c.7-.8.7-2 0-2.8L51.4 155.3c-1.3-1.3-3.4-.4-3.4 1.4V376c0 17.6 14.4 32 32 32h352c17.6 0 32-14.4 32-32V198c-12.1 12.6-29.1 20.5-48 20.5z"/><path d="M349.5 152c0-11.6 3-22.5 8.2-32H79.9c-7.5 0-14.4 2.6-19.8 7L217 286.7c10.4 10.6 24.3 16.4 39.1 16.4s28.7-5.8 39.1-16.4l80.5-81.9c-16-12.2-26.2-31.3-26.2-52.8z"/></svg>
+              </span>
+              <p>jk@devicezero.me</p>
             </div>
-        </nav>
-
-        <!--main section-->
-        <section class="bg-texture hero" id="main">
-            <div class="container">
-                <div class="row d-md-flex brand">
-                    <!-- <div class="col-md-6 hidden-sm-down wow fadeIn">
-                        <img class="img-fluid mx-auto d-block main" src="img/main.jpg"/>
-                    </div> -->
-                    <div class="col-md-6 col-sm-12 text-white wow fadeIn">
-                        <h2 class="pt-4">Your website needs to be <b class="text-primary-light">fast</b>!⚡️</h2>
-                        <p class="intro mt-5">
-                           Hi, I am <strong>Jonas!</strong>
-                           I have over 15 years experience in creating web products and worked with companies of all sizes.
-                           I build digital products since the age of 13. I still develop on the web, I consult web development processes, I manage engineers, designers and products.
-                           My clients come from different areas: Retail, electronic manufacturers, food industry, chemical manufacturers, agencies, publishers and more. Just send me a message and ask for a full CV :)
-                        </p>
-                        <p class="mt-5">
-                          People use products I built to <a target="_blank" rel="noopener" class="btn btn-primary mr-2 mb-2 page-scroll" href="https://wfm.data-room.de/en">manage business workflows</a> or to <a target="_blank" rel="noopener" class="btn btn-primary mr-2 mb-2 page-scroll" href="https://www.stehauf.io">communicate in remote teams</a>.
-                        </p>
-
-                    </div>
-
-                    <div class="col-md-5 offset-md-1 col-sm-12 wow fadeIn" data-wow-delay=".7s">
-                        <div class="card">
-                            <div class="card-block">
-                                <h6>Why does performance matter?</h6>
-                                <p>
-                                    <ul>
-                                      <li>It is part of your SEO ranking. (<a target="_blank" rel="noopener" href="https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html">source</a>)</li>
-                                      <li>Slow websites can cost you money, better performance can increase sales. (<a target="_blank" rel="noopener" href="https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales">source</a>)</li>
-                                      <li>Users do not want to wait. (<a target="_blank" rel="noopener" href="https://www.nngroup.com/articles/website-response-times/">source</a>).</li>
-                                      <li>The next billion users will not have high bandwidth and fast devices! (<a target="_blank" rel="noopener" href="https://www.blog.google/perspectives/caesar-sengupta/next-billion-users-are-future-internet/">source</a>)</li>
-                                    </ul>
-                                    Let me check your website for performance improvements. I'll explain my findings in an exclusive call and you will receive a written report which you can use in any way, no strings attached! I value transparency a lot, see my <a href="https://blog.devicezero.de/2018/04/04/values/">values</a> for more.
-                                </p>
-                                <a href="https://devicezero.typeform.com/to/LHKais" target="_blank" rel="noopener" class="btn btn-primary mr-2 mb-2 page-scroll">Performance check for only 599$</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text_center">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48c-79.5 0-144 59.9-144 133.7 0 104 144 282.3 144 282.3s144-178.3 144-282.3C400 107.9 335.5 48 256 48zm0 190.9c-25.9 0-46.9-21-46.9-46.9s21-46.9 46.9-46.9 46.9 21 46.9 46.9-21 46.9-46.9 46.9z"/></svg>
+              </span>
+              <p>I work remotely ❤️ 🌍</p>
             </div>
+          </div>
         </section>
+      </div>
 
-        <!--services-->
-        <section class="bg-faded" id="services">
-            <div class="container">
-                <div class="row mb-3">
-                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
-                        <h2 class="text-primary">How is it done?</h2>
-                        <p class="lead mt-4">
-                            A short overview on the website performance check.
-                        </p>
-                    </div>
-                </div>
-                <div class="row mt-5 text-center">
-                    <div class="col-md-4 wow fadeIn">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="icon-box">
-                                    <em class="ion-arrow-graph-up-right icon-md"></em>
-                                </div>
-                                <h6>KPIs</h6>
-                                <p>
-                                    Modern KPIs do not only measure the pure technical side of a website but the real life impact on users.
-                                    While loading times or server response times are still important, KPIs like First Meaningful Paint, First Contentful Paint, Time To Interactive, Input Latency or Render Blocking Requests are much more meaningful.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeIn">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="icon-box">
-                                    <em class="ion-hammer icon-md"></em>
-                                </div>
-                                <h6>Tools</h6>
-                                <p>
-                                    I use tools like Google Lighthouse, Google Analytics, Webpagetest, Calibre and others to measure performance.
-                                    I do advise to implement those tools in your website development process to make sure your website stays fast and crispy in the future as well.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeIn">
-                        <div class="card">
-                            <div class="card-block">
-                                <div class="icon-box">
-                                    <em class="ion-flash icon-md"></em>
-                                </div>
-                                <h6>Improvement</h6>
-                                <p>
-                                    Based on the the performance report I will give practical tips and guidelines on how to improve both the current state of your website as well as an approach to continously integrate performance measurements and improvements into your development workflow.
-                                    Those improvements can be sourced in different layers of your infrastructre (CDN, Webserver, Load Balancing, JavaScript compiling, CSS generating, etc.).
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
-                        <p class="lead mt-4">
-                            <a href="https://devicezero.typeform.com/to/LHKais" target="_blank" rel="noopener" class="btn btn-primary mr-2 mb-2 page-scroll">Performance check for only 599$</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--contact-->
-        <section class="bg-texture-collage p-0" id="contact">
-            <div class="container">
-                <div class="row d-md-flex text-white text-center wow fadeIn">
-                    <div class="col-sm-6 p-5">
-                        <p><em class="ion-ios-email-outline icon-md"></em></p>
-                        <p class="lead">jk@devicezero.me</p>
-                    </div>
-                    <div class="col-sm-6 p-5">
-                        <p><em class="ion-ios-location-outline icon-md"></em></p>
-                        <p class="lead">🌍 World, Earth</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--footer-->
-        <section class="bg-footer" id="connect">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
-                        <h1>JONAS KRÖGER</h1>
-                        <p class="mt-4">
-                            <a href="https://twitter.com/jonaskroeger" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
-                            <a href="https://facebook.com/devicezero" target="_blank"><em class="ion-social-facebook text-facebook-alt icon-sm mr-3"></em></a>
-                            <a href="https://www.instagram.com/devicezero" target="_blank"><em class="ion-social-instagram text-instagram-alt icon-sm mr-3"></em></a>
-                            <a href="mailto:jk@devicezero.me"><em class="ion-paper-airplane text-google-alt icon-sm mr-3"></em></a>
-                        </p>
-                        <p class="pt-2 text-muted">
-                            Theme: &copy; 2017 Comply Theme. A Bootstrap 4 multipurpose theme by
-                            <a href="https://wireddots.com">Wired Dots</a>. Developed by <a href="https://twitter.com/attacomsian">@attacomsian</a>
-                        </p>
-
-                        <div class="imprint">
-                          <h4><a id="imprint-link">Impressum / Datenschutz</a></h4>
-
-                          <div id="imprint-text">
+  <footer>
+    <div class="container">
+      <div class="single">
+        <h1 class="text_center">Jonas Kröger</h1>
+        <div class="icons_social text_center">
+          <a href="https://twitter.com/jonaskroeger" target="_blank" rel="noopener">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6-18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6.8 15 2.5 22.1-80.5-4-151.9-42.6-199.6-101.3-8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7-16-.4-31-4.8-44-12.1v1.2c0 47 33.4 86.1 77.7 95-8.1 2.2-16.7 3.4-25.5 3.4-6.2 0-12.3-.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3-33.1 26-74.9 41.5-120.3 41.5-7.8 0-15.5-.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-.1-8.4-.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </span>
+          </a>
+          <a href="https://www.facebook.com/devicezero" target="_blank" rel="noopener">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M426.8 64H85.2C73.5 64 64 73.5 64 85.2v341.6c0 11.7 9.5 21.2 21.2 21.2H256V296h-45.9v-56H256v-41.4c0-49.6 34.4-76.6 78.7-76.6 21.2 0 44 1.6 49.3 2.3v51.8h-35.3c-24.1 0-28.7 11.4-28.7 28.2V240h57.4l-7.5 56H320v152h106.8c11.7 0 21.2-9.5 21.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z"/></svg>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/devicezero" target="_blank" rel="noopener">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M336 96c21.2 0 41.3 8.4 56.5 23.5S416 154.8 416 176v160c0 21.2-8.4 41.3-23.5 56.5S357.2 416 336 416H176c-21.2 0-41.3-8.4-56.5-23.5S96 357.2 96 336V176c0-21.2 8.4-41.3 23.5-56.5S154.8 96 176 96h160m0-32H176c-61.6 0-112 50.4-112 112v160c0 61.6 50.4 112 112 112h160c61.6 0 112-50.4 112-112V176c0-61.6-50.4-112-112-112z"/><path d="M360 176c-13.3 0-24-10.7-24-24s10.7-24 24-24c13.2 0 24 10.7 24 24s-10.8 24-24 24zM256 192c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64m0-32c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96z"/></svg>
+            </span>
+          </a>
+          <a href="mailto:jk@devicezero.me">
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M435.9 64.9l-367.1 160c-6.5 3.1-6.3 12.4.3 15.3l99.3 56.1c5.9 3.3 13.2 2.6 18.3-1.8l195.8-168.8c1.3-1.1 4.4-3.2 5.6-2 1.3 1.3-.7 4.3-1.8 5.6L216.9 320.1c-4.7 5.3-5.4 13.1-1.6 19.1l64.9 104.1c3.2 6.3 12.3 6.2 15.2-.2L447.2 76c3.3-7.2-4.2-14.5-11.3-11.1z"/></svg>
+            </span>
+          </a>
+        </div>
+        <h3 class="text_center text_cursor" onclick="toggleHidden('imprint-text')">Impressum / Datenschutz</h3>
+        <div id="imprint-text" class="hidden">
                             <h2>Angaben gem&auml;&szlig; &sect; 5 TMG:</h2> <p>Jonas Kröger <br /> Martin-Luther-Strasse 17<br /> 68623 Lampertheim</p> <h2> Kontakt:</h2> <p>Telefon: +4962069462755<br /> E-Mail: jk@devicezero.me</p> <h2>Umsatzsteuer:</h2> <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;27 a Umsatzsteuergesetz:<br /> DE313509812</p> <h2>Haftung f&uuml;r Inhalte</h2> <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen.</p> <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p> <h2>
 Haftung f&uuml;r Links</h2> <p>Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p> <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p> <h2> Urheberrecht</h2> <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet.</p> <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 <h2>Datenschutzerklärung</h2><h3 id="dsg-general-intro"></h3><p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).<br>
@@ -251,7 +220,7 @@ Wir können temporäre und permanente Cookies einsetzen und klären hierüber im
 <br>
 Falls die Nutzer nicht möchten, dass Cookies auf ihrem Rechner gespeichert werden, werden sie gebeten die entsprechende Option in den Systemeinstellungen ihres Browsers zu deaktivieren. Gespeicherte Cookies können in den Systemeinstellungen des Browsers gelöscht werden. Der Ausschluss von Cookies kann zu Funktionseinschränkungen dieses Onlineangebotes führen.<br>
 <br>
-Ein genereller Widerspruch gegen den Einsatz der zu Zwecken des Onlinemarketing eingesetzten Cookies kann bei einer Vielzahl der Dienste, vor allem im Fall des Trackings, über die US-amerikanische Seite <a href="http://www.aboutads.info/choices/">http://www.aboutads.info/choices/</a> oder die EU-Seite <a href="http://www.youronlinechoices.com/">http://www.youronlinechoices.com/</a> erklärt werden. Des Weiteren kann die Speicherung von Cookies mittels deren Abschaltung in den Einstellungen des Browsers erreicht werden. Bitte beachten Sie, dass dann gegebenenfalls nicht alle Funktionen dieses Onlineangebotes genutzt werden können.</p><h3 id="dsg-general-erasure">Löschung von Daten</h3><p>Die von uns verarbeiteten Daten werden nach Maßgabe der Art. 17 und 18 DSGVO gelöscht oder in ihrer Verarbeitung eingeschränkt. Sofern nicht im Rahmen dieser Datenschutzerklärung ausdrücklich angegeben, werden die bei uns gespeicherten Daten gelöscht, sobald sie für ihre Zweckbestimmung nicht mehr erforderlich sind und der Löschung keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Sofern die Daten nicht gelöscht werden, weil sie für andere und gesetzlich zulässige Zwecke erforderlich sind, wird deren Verarbeitung eingeschränkt. D.h. die Daten werden gesperrt und nicht für andere Zwecke verarbeitet. Das gilt z.B. für Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen.<br>
+Ein genereller Widerspruch gegen den Einsatz der zu Zwecken des Onlinemarketing eingesetzten Cookies kann bei einer Vielzahl der Dienste, vor allem im Fall des Trackings, über die US-amerikanische Seite <a href="http://www.aboutads.info/choices/" rel="noopener" target="_blank">http://www.aboutads.info/choices/</a> oder die EU-Seite <a href="http://www.youronlinechoices.com/" target="_blan" rel="noopener">http://www.youronlinechoices.com/</a> erklärt werden. Des Weiteren kann die Speicherung von Cookies mittels deren Abschaltung in den Einstellungen des Browsers erreicht werden. Bitte beachten Sie, dass dann gegebenenfalls nicht alle Funktionen dieses Onlineangebotes genutzt werden können.</p><h3 id="dsg-general-erasure">Löschung von Daten</h3><p>Die von uns verarbeiteten Daten werden nach Maßgabe der Art. 17 und 18 DSGVO gelöscht oder in ihrer Verarbeitung eingeschränkt. Sofern nicht im Rahmen dieser Datenschutzerklärung ausdrücklich angegeben, werden die bei uns gespeicherten Daten gelöscht, sobald sie für ihre Zweckbestimmung nicht mehr erforderlich sind und der Löschung keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Sofern die Daten nicht gelöscht werden, weil sie für andere und gesetzlich zulässige Zwecke erforderlich sind, wird deren Verarbeitung eingeschränkt. D.h. die Daten werden gesperrt und nicht für andere Zwecke verarbeitet. Das gilt z.B. für Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen.<br>
 <br>
 Nach gesetzlichen Vorgaben in Deutschland, erfolgt die Aufbewahrung insbesondere für 10 Jahre gemäß §§ 147 Abs. 1 AO, 257 Abs. 1 Nr. 1 und 4, Abs. 4 HGB (Bücher, Aufzeichnungen, Lageberichte, Buchungsbelege, Handelsbücher, für Besteuerung relevanter Unterlagen, etc.) und 6 Jahre gemäß § 257 Abs. 1 Nr. 2 und 3, Abs. 4 HGB (Handelsbriefe). <br>
 <br>
@@ -267,42 +236,40 @@ Hierbei verarbeiten wir, bzw. unser Hostinganbieter Bestandsdaten, Kontaktdaten,
 <br>
 Logfile-Informationen werden aus Sicherheitsgründen (z.B. zur Aufklärung von Missbrauchs- oder Betrugshandlungen) für die Dauer von maximal 7 Tagen gespeichert und danach gelöscht. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des jeweiligen Vorfalls von der Löschung ausgenommen.</span></p><p></p><h3 id="dsg-ga-googleanalytics">Google Analytics</h3><p></p><p><span class="ts-muster-content">Wir setzen auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) Google Analytics, einen Webanalysedienst der Google LLC („Google“) ein. Google verwendet Cookies. Die durch das Cookie erzeugten Informationen über Benutzung des Onlineangebotes durch die Nutzer werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.<br>
 <br>
-Google ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten (<a target="_blank" href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active</a>).<br>
+Google ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten (<a target="_blank" rel="noopener" href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active</a>).<br>
 <br>
 Google wird diese Informationen in unserem Auftrag benutzen, um die Nutzung unseres Onlineangebotes durch die Nutzer auszuwerten, um Reports über die Aktivitäten innerhalb dieses Onlineangebotes zusammenzustellen und um weitere, mit der Nutzung dieses Onlineangebotes und der Internetnutzung verbundene Dienstleistungen, uns gegenüber zu erbringen. Dabei können aus den verarbeiteten Daten pseudonyme Nutzungsprofile der Nutzer erstellt werden.<br>
 <br>
 Wir setzen Google Analytics nur mit aktivierter IP-Anonymisierung ein. Das bedeutet, die IP-Adresse der Nutzer wird von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt.<br>
 <br>
-Die von dem Browser des Nutzers übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Die Nutzer können die Speicherung der Cookies durch eine entsprechende Einstellung ihrer Browser-Software verhindern; die Nutzer können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf ihre Nutzung des Onlineangebotes bezogenen Daten an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter folgendem Link verfügbare Browser-Plugin herunterladen und installieren:&nbsp;<a target="_blank" href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>.<br>
+Die von dem Browser des Nutzers übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Die Nutzer können die Speicherung der Cookies durch eine entsprechende Einstellung ihrer Browser-Software verhindern; die Nutzer können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf ihre Nutzung des Onlineangebotes bezogenen Daten an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter folgendem Link verfügbare Browser-Plugin herunterladen und installieren:&nbsp;<a target="_blank" rel="noopener" href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>.<br>
 <br>
-Weitere Informationen zur Datennutzung durch Google, Einstellungs- und Widerspruchsmöglichkeiten, erfahren Sie in der Datenschutzerklärung von Google (<a target="_blank" href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>) sowie in den Einstellungen für die Darstellung von Werbeeinblendungen durch Google <a target="_blank" href="https://adssettings.google.com/authenticated">(https://adssettings.google.com/authenticated</a>).<br>
+Weitere Informationen zur Datennutzung durch Google, Einstellungs- und Widerspruchsmöglichkeiten, erfahren Sie in der Datenschutzerklärung von Google (<a target="_blank" rel="noopener" href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>) sowie in den Einstellungen für die Darstellung von Werbeeinblendungen durch Google <a target="_blank" rel="noopener" href="https://adssettings.google.com/authenticated">(https://adssettings.google.com/authenticated</a>).<br>
 <br>
 Die personenbezogenen Daten der Nutzer werden nach 14 Monaten gelöscht oder anonymisiert.</span></p><p></p><h3 id="dsg-socialmedia">Onlinepräsenzen in sozialen Medien</h3><p></p><p><span class="ts-muster-content">Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und Plattformen, um mit den dort aktiven Kunden, Interessenten und Nutzern kommunizieren und sie dort über unsere Leistungen informieren zu können. Beim Aufruf der jeweiligen Netzwerke und Plattformen gelten die Geschäftsbedingungen und die Datenverarbeitungsrichtlinien deren jeweiligen Betreiber. <br>
 <br>
 Soweit nicht anders im Rahmen unserer Datenschutzerklärung angegeben, verarbeiten wir die Daten der Nutzer sofern diese mit uns innerhalb der sozialen Netzwerke und Plattformen kommunizieren, z.B. Beiträge auf unseren Onlinepräsenzen verfassen oder uns Nachrichten zusenden.</span></p><p></p><h3 id="dsg-thirdparty-einleitung">Einbindung von Diensten und Inhalten Dritter</h3><p></p><p><span class="ts-muster-content">Wir setzen innerhalb unseres Onlineangebotes auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) Inhalts- oder Serviceangebote von Drittanbietern ein, um deren Inhalte und Services, wie z.B. Videos oder Schriftarten einzubinden (nachfolgend einheitlich bezeichnet als “Inhalte”). <br>
 <br>
-Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die IP-Adresse ist damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter können ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als "Web Beacons" bezeichnet) für statistische oder Marketingzwecke verwenden. Durch die "Pixel-Tags" können Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen können ferner in Cookies auf dem Gerät der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.</span></p><p></p><h3 id="dsg-thirdparty-vimeo">Vimeo</h3><p></p><p><span class="ts-muster-content">Wir können die Videos der Plattform “Vimeo” des Anbieters Vimeo Inc., Attention: Legal Department, 555 West 18th Street New York, New York 10011, USA, einbinden. Datenschutzerklärung: <a target="_blank" href="https://vimeo.com/privacy">https://vimeo.com/privacy</a>.  WIr weisen darauf hin, dass Vimeo Google Analytics einsetzen kann und verweisen hierzu auf die Datenschutzerklärung (<a target="_blank" href="https://www.google.com/policies/privacy">https://www.google.com/policies/privacy</a>) sowie Opt-Out-Möglichkeiten für Google-Analytics (<a target="_blank" href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>) oder die Einstellungen von Google für die Datennutzung zu Marketingzwecken (<a target="_blank" href="https://adssettings.google.com/">https://adssettings.google.com/.</a>).</span></p><p></p><h3 id="dsg-thirdparty-youtube">Youtube</h3><p></p><p><span class="ts-muster-content">Wir binden die Videos der Plattform “YouTube” des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Datenschutzerklärung: <a target="_blank" href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a>, Opt-Out: <a target="_blank" href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</span></p><p></p><h3 id="dsg-thirdparty-googlefonts">Google Fonts</h3><p></p><p><span class="ts-muster-content">Wir binden die Schriftarten ("Google Fonts") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Datenschutzerklärung: <a target="_blank" href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a>, Opt-Out: <a target="_blank" href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</span></p><p></p><h3 id="dsg-thirdparty-twitter">Twitter</h3><p></p><p><span class="ts-muster-content">Innerhalb unseres Onlineangebotes können Funktionen und Inhalte des Dienstes Twitter, angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA, eingebunden werden. Hierzu können z.B. Inhalte wie Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte dieses Onlineangebotes innerhalb von Twitter teilen können.<br>
-Sofern die Nutzer Mitglieder der Plattform Twitter sind, kann Twitter den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten (<a target="_blank" href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active">https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active</a>). Datenschutzerklärung: <a target="_blank" href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a>, Opt-Out: <a target="_blank" href="https://twitter.com/personalization">https://twitter.com/personalization</a>.</span></p><p></p><h3 id="dsg-thirdparty-instagram">Instagram</h3><p></p><p><span class="ts-muster-content">Innerhalb unseres Onlineangebotes können Funktionen und Inhalte des Dienstes Instagram, angeboten durch die Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA, eingebunden werden. Hierzu können z.B. Inhalte wie Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte dieses Onlineangebotes innerhalb von Instagram teilen können. Sofern die Nutzer Mitglieder der Plattform Instagram sind, kann Instagram den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Datenschutzerklärung von Instagram: <a target="_blank" href="http://instagram.com/about/legal/privacy/">http://instagram.com/about/legal/privacy/</a>.  </span></p><a href="https://datenschutz-generator.de" class="dsg1-5" rel="nofollow" target="_blank">Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a>
-                        
+Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die IP-Adresse ist damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter können ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als "Web Beacons" bezeichnet) für statistische oder Marketingzwecke verwenden. Durch die "Pixel-Tags" können Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen können ferner in Cookies auf dem Gerät der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.</span></p><p></p><h3 id="dsg-thirdparty-vimeo">Vimeo</h3><p></p><p><span class="ts-muster-content">Wir können die Videos der Plattform “Vimeo” des Anbieters Vimeo Inc., Attention: Legal Department, 555 West 18th Street New York, New York 10011, USA, einbinden. Datenschutzerklärung: <a target="_blank" rel="noopener" href="https://vimeo.com/privacy">https://vimeo.com/privacy</a>.  WIr weisen darauf hin, dass Vimeo Google Analytics einsetzen kann und verweisen hierzu auf die Datenschutzerklärung (<a target="_blank" rel="noopener" href="https://www.google.com/policies/privacy">https://www.google.com/policies/privacy</a>) sowie Opt-Out-Möglichkeiten für Google-Analytics (<a target="_blank" rel="noopener" href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>) oder die Einstellungen von Google für die Datennutzung zu Marketingzwecken (<a target="_blank" rel="noopener" href="https://adssettings.google.com/">https://adssettings.google.com/.</a>).</span></p><p></p><h3 id="dsg-thirdparty-youtube">Youtube</h3><p></p><p><span class="ts-muster-content">Wir binden die Videos der Plattform “YouTube” des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Datenschutzerklärung: <a target="_blank" rel="noopener" href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a>, Opt-Out: <a target="_blank" rel="noopener" href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</span></p><p></p><h3 id="dsg-thirdparty-googlefonts">Google Fonts</h3><p></p><p><span class="ts-muster-content">Wir binden die Schriftarten ("Google Fonts") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein. Datenschutzerklärung: <a target="_blank" rel="noopener" href="https://www.google.com/policies/privacy/">https://www.google.com/policies/privacy/</a>, Opt-Out: <a target="_blank" rel="noopener" href="https://adssettings.google.com/authenticated">https://adssettings.google.com/authenticated</a>.</span></p><p></p><h3 id="dsg-thirdparty-twitter">Twitter</h3><p></p><p><span class="ts-muster-content">Innerhalb unseres Onlineangebotes können Funktionen und Inhalte des Dienstes Twitter, angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA, eingebunden werden. Hierzu können z.B. Inhalte wie Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte dieses Onlineangebotes innerhalb von Twitter teilen können.<br>
+Sofern die Nutzer Mitglieder der Plattform Twitter sind, kann Twitter den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten (<a target="_blank" rel="noopener" href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active">https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active</a>). Datenschutzerklärung: <a target="_blank" rel="noopener" href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a>, Opt-Out: <a target="_blank" rel="noopener" href="https://twitter.com/personalization">https://twitter.com/personalization</a>.</span></p><p></p><h3 id="dsg-thirdparty-instagram">Instagram</h3><p></p><p><span class="ts-muster-content">Innerhalb unseres Onlineangebotes können Funktionen und Inhalte des Dienstes Instagram, angeboten durch die Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA, eingebunden werden. Hierzu können z.B. Inhalte wie Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte dieses Onlineangebotes innerhalb von Instagram teilen können. Sofern die Nutzer Mitglieder der Plattform Instagram sind, kann Instagram den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Datenschutzerklärung von Instagram: <a target="_blank" rel="noopener" href="http://instagram.com/about/legal/privacy/">http://instagram.com/about/legal/privacy/</a>.  </span></p><a href="https://datenschutz-generator.de" class="dsg1-5" target="_blank" rel="noopener">Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a>
                           </div>
 
-                        </div>
+                          <p class="text_center text_softened">
+                            Design inspired by themes of <a rel="noopener" target="_blank" href="https://wireddots.com/">Wired Dots</a>.
+                            Developed by <a rel="noopener" target="_blank" href="https://twitter.com/attacomsian">@attacomsian</a>
+                          </p>
 
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </div>
+  </footer>
 
-        <section id="cookieconsent" class="hidden">
-          This website uses cookies. 🍪 <small>(hmmm… cookies.)</small>
-          <a onclick="setCookieconsent()" class="btn btn-primary mr-2 mb-2 page-scroll">ok</a>
-        </section>
+  <section id="cookieconsent" class="hidden">
+    This website uses cookies. 🍪 <small>(hmmm… cookies.)</small>
+    <a onclick="setCookieconsent()" class="button">ok</a>
+  </section>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-        <script src="../js/scripts.js"></script>
-    </body>
+  <script>
+    var setCookieconsent=function(){localStorage.setItem("cookieconsent",true);document.getElementById("cookieconsent").classList.add("hidden")};var toggleHidden=function(id){if(document.getElementById(id).classList.contains("hidden")){document.getElementById(id).classList.remove("hidden")}else{document.getElementById(id).classList.add("hidden")}};var closeMenu=function(){if(document.getElementById("close").style.display){document.getElementById("logo").style.display="block";document.getElementById("open").style.display="inline";document.getElementById("close").style.display="none";document.getElementById("nav_links").style.display="none"}};document.getElementById("open").addEventListener("click",function(){document.getElementById("logo").style.display="none";document.getElementById("open").style.display="none";document.getElementById("close").style.display="inline";document.getElementById("nav_links").style.display="block"});document.getElementById("close").addEventListener("click",function(){closeMenu()});if(!localStorage.getItem("cookieconsent")){document.getElementById("cookieconsent").classList.remove("hidden")}
+  </script>
+</body>
 </html>
