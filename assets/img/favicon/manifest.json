@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "name": "devicezero.de",
+ "short_name": "devicezero",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
