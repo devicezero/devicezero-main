@@ -1,0 +1,26 @@
+#cookieconsent {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  color: map-get($colors, black);
+}
+
+#cookieconsent small {
+  color: map-get($colors, black);
+}
+
+#cookieconsent .button {
+  position: fixed;
+  right: 5px;
+  bottom: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+#cookieconsent.hidden {
+  display: none;
+}

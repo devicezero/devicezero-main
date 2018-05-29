@@ -1,0 +1,25 @@
+@media only screen and (min-width: 700px) {
+  .column {
+    display: grid;
+    grid-gap: 20px;
+    margin: map-get($margin, big) 0;
+  }
+
+  .c50 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    grid-template-columns: 50% 40%;
+    justify-content: space-between;
+  }
+
+  .c33 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .single {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}

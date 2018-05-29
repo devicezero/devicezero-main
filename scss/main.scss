@@ -1,0 +1,76 @@
+@import "helper/reset";
+@import "colors";
+@import "fonts";
+@import "spacings";
+@import "borders";
+
+@import "components/nav";
+@import "components/grid";
+@import "components/card";
+@import "components/quote";
+@import "components/button";
+@import "components/footer";
+@import "components/link";
+@import "components/icon";
+@import "components/cookieconsent";
+@import "components/contact";
+
+body {
+  background-color: map-get($colors, primary);
+  color: white;
+  font-family: map-get($fonts, primary);
+  font-size: map-get($font-sizes, normal);
+  background: linear-gradient(to bottom right, map-get($colors, primary), map-get($colors, primary-light));
+}
+
+div.container {
+  max-width: 1140px;
+  margin:  map-get($padding, big) auto;
+  margin-bottom: 0;
+  padding: map-get($padding, normal);
+}
+
+div.contrast {
+  background: map-get($colors, white);
+  color: map-get($colors, black);
+
+  h2 {
+    color: map-get($colors, primary);
+  }
+}
+
+section {
+  padding: map-get($padding, big) 0;
+}
+
+.text_center {
+  text-align: center;
+}
+
+h2 {
+  font-size: map-get($font-sizes, h2);
+  font-weight: bold;
+  line-height: 1;
+  margin: 100px 0 0 0;
+}
+
+p {
+  margin: map-get($margin, normal) 0;
+}
+
+ul li {
+  list-style: disc;
+  margin-left: map-get($margin, big);
+}
+
+.text_light {
+  color: map-get($colors, white);
+}
+
+.text_softened {
+  opacity: .2;
+}
+
+.text_cursor {
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: map-get($colors, white);
+  color: map-get($colors, primary);
+  flex-flow: column;
+  min-height: 75px;
+  border-bottom: 1px solid map-get($colors, primary-light);
+
+  ul {
+    display: none;
+    li {
+      list-style: none;
+      margin: map-get($margin, big) map-get($margin, normal);
+    }
+  }
+
+  #logo {
+    position: fixed;
+    max-width: 150px;
+    margin: map-get($margin, normal);
+  }
+
+  .mobile_menu {
+    text-align: right;
+    padding-right: map-get($padding, normal);
+
+    #close {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+
+  nav {
+    flex-flow: row;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    .mobile_menu {
+      display: none;
+    }
+  }
+
+}
