@@ -1,190 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/img/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./assets/img/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="utf-8">
+        <title>Jonas Kröger - remote product manager</title>
+        <meta name="description" content="I translate between humans and developers." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
-  <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/main.bundle.css">
-  <title>Jonas Kröger - remote product manager</title>
-</head>
-<body>
-  <nav>
-    <a href="#">
-      <img id="logo" src="./assets/img/devicezero_logo.svg" alt="devicezero">
-    </a>
 
-    <div>
-      <ul id="nav_links">
-        <li><a href="#hello-world" onclick="closeMenu()">Hello World!</a></li>
-        <li><a href="#services" onclick="closeMenu()">Services</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-        <li><a href="//blog.devicezero.de" onclick="closeMenu()">Blog</a></li>
-        <li><a title="Diese Seite auf deutsch lesen" href="./de/">🇩🇪</a></li>
-      </ul>
-    </div>
+        <!--Bootstrap 4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!--icons-->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--header-->
+        <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top sticky-navigation">
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ion-grid icon-sm"></span>
+            </button>
+            <a class="navbar-brand hero-heading" href="#">
+              <img class="logo" src="./img/devicezero_logo.svg" alt="devicezero">
+            </a>
 
-    <div class="mobile_menu">
-      <i class="icon ion-ios-menu" id="open"></i>
-      <i class="icon ion-ios-close" id="close"></i>
-    </div>
-  </nav>
-
-  <div class="container">
-    <section class="column hero" id="hello-world">
-      <div>
-        <h2>Digital products are meant to <span class="text_light">improve your work.</span></h2>
-        <p>
-          Hi, I am Jonas! I can be best described as an interface between humans
-          while having the bigger picture in mind. I bring together people with different
-          expertise to create something meaningful. I have over 15 years experience in creating
-          web products and worked with companies of all sizes.
-        </p>
-        <p>
-          <a href="#services" class="button">Let me tell you more</a>
-          or read about <a class="button" href="http://blog.devicezero.de/2018/04/04/values/">how I work</a>,
-          why I think <a class="button" href="http://blog.devicezero.de/2017/01/26/small-teams-kickass/">small teams are the best</a>
-          or how I try to <a class="button" href="http://blog.devicezero.de/2017/02/19/understand-your-clients/">understand</a> your workflows.
-        </p>
-      </div>
-      <div class="card">
-        <h3>The show me what you got package</h3>
-        <p>
-          To get you started, I will analyze your website / product idea / MVP for a small fixed rate.
-          Use the results as you like. No strings attached!
-         </p>
-        <p>
-          I'll explain my findings in an exclusive call and you will receive a written overview,
-          usually containing remarks regarding
-        </p>
-        <ul>
-          <li>Technology and architecture</li>
-          <li>Design and visual impression</li>
-          <li>Usability</li>
-          <li>Overall user experience</li>
-        </ul>
-        <a href="https://devicezero.typeform.com/to/TFT6ZD" target="_blank" rel="noopener" class="button">Let's have a chat, say hello!</a>
-      </div>
-    </section>
-  </div>
-
-<div class="contrast">
-  <div class="container">
-    <section id="services">
-      <h2 class="text_center">Services</h2>
-      <p class="text_center">Let's see if I can help you with that!</p>
-      <div class="column c33">
-        <div class="card">
-          <div class="text_center"><i class="icon ion-ios-chatboxes"></i></div>
-          <h3>Product Management</h3>
-          <p class="text_center">As a experienced product manager I can help translating between clients, designers and developers (and more humans!).🙃</p>
-        </div>
-        <div class="card">
-          <div class="text_center"><i class="icon ion-ios-star-outline"></i></div>
-          <h3>Help build your MVPs</h3>
-          <p class="text_center">Say you have a product idea and need someone to build a prototype or MVP. I can help you myself with both my own expertise and a network of developers and designers.</p>
-        </div>
-        <div class="card">
-          <div class="text_center"><i class="icon ion-ios-code-working"></i></div>
-          <h3>Web Development</h3>
-          <p class="text_center">Node.js, CouchDB, Git, HTML, CSS, Angular, VueJS or Docker are my friends as well!</p>
-        </div>
-        <div class="card">
-          <div class="text_center"><i class="icon ion-ios-people"></i></div>
-          <h3>Consulting</h3>
-          <p class="text_center">Sometimes you need an outside opinion. It is important to listen to people first and try to understand their problems to find real working solutions with them. And I don't stop when it's getting uncomfortable!</p>
-        </div>
-        <div class="card">
-          <div class="text_center"><i class="icon ion-md-happy"></i></div>
-          <h3>Happy Developers</h3>
-          <p class="text_center">I have been working with developers all my professional life. Let me check your current workflow and see if we can improve. Both for better results and happier people.</p>
-        </div>
-        <div class="card">
-          <div class="text_center"><i class="icon ion-ios-flask"></i></div>
-          <h3>Getting ready</h3>
-          <p class="text_center">The transitioning processes into digital workflows can be hard. I have helped companies making the switch and improve their everyday communication and work with the help of digital solutions.</p>
-        </div>
-      </div>
-    </section>
-  </div>
-  </div>
-
-  <div class="container">
-    <section class="single" id="quotes">
-      <h2 class="text_center">Others about me</h2>
-
-      <blockquote>
-        »Without Jonas, our platform would be years behind. Since he started working with us, our processes, communication, quality and overall progress have improved to a great extent.«
-      </blockquote>
-
-      <blockquote>
-        »Even under high time pressure, complex tasks and ambitious clients Mr. Kröger never lost the overview of the whole project and was responsible for an ongoing positive progress.«
-      </blockquote>
-
-      <blockquote>
-        »Due to his good communication skills, he was able to integrate into our team without any problems.«
-      </blockquote>
-
-      <blockquote>
-        »Jonas is an excellent skilled person. He is self-critical, loyal, extremely flexible and very popular to all colleagues.«
-      </blockquote>
-
-      <blockquote>
-        »Working with Jonas makes sure progress is made along the way. He always keeps the direction clear and is not afraid to ask painful questions which almost always lead to a better result for our processes.«
-      </blockquote>
-
-      <blockquote>
-        »As a developer you need someone like Jonas. He is the perfect communicator between developers and customers. He always keeps track on progress and supports both sides without causing unnecessary negative pressure. It’s very beneficial to have someone like Jonas in your team as he truly understands how developers think and what they need.«
-      </blockquote>
-    </section>
-  </div>
-
-    <div class="container">
-      <section id="contact">
-        <h2 class="text_center">Contact</h2>
-          <div class="column c50">
-            <div class="text_center">
-              <div><i class="icon ion-ios-mail-unread"></i></div>
-              <p>jk@devicezero.me</p>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#main">Hello World! <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="//blog.devicezero.de">Blog</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a title="Diese Seite auf deutsch lesen" class="nav-link" href="./de/">🇩🇪</a>
+                    </li>
+                </ul>
             </div>
-            <div class="text_center">
-              <div><i class="icon ion-ios-pin"></i></div>
-              <p>I work remotely ❤️ 🌍</p>
+        </nav>
+
+        <!--main section-->
+        <section class="bg-texture hero" id="main">
+            <div class="container">
+                <div class="row d-md-flex brand">
+                    <!-- <div class="col-md-6 hidden-sm-down wow fadeIn">
+                        <img class="img-fluid mx-auto d-block main" src="img/main.jpg"/>
+                    </div> -->
+                    <div class="col-md-6 col-sm-12 text-white wow fadeIn">
+                        <h2 class="pt-4">Digital products are meant to <b class="text-primary-light">improve your work</b>.</h2>
+                        <p class="mt-5">
+                           Hi, I am <strong>Jonas!</strong> I can be best described as an interface between humans while having the bigger picture in mind. I bring together people with different expertise to create something meaningful. I have over 15 years experience in creating web products and worked with companies of all sizes.
+                        </p>
+                        <p class="mt-5">
+                            <a href="#services" class="btn btn-primary mr-2 mb-2 page-scroll">Let me tell you more</a>
+                            or read about <a class="btn btn-primary mr-2 mb-2 page-scroll" href="http://blog.devicezero.de/2018/04/04/values/">how I work</a>, why I think <a class="btn btn-primary mr-2 mb-2 page-scroll" href="http://blog.devicezero.de/2017/01/26/small-teams-kickass/">small teams are the best</a> or how I try to <a class="btn btn-primary mr-2 mb-2 page-scroll" href="http://blog.devicezero.de/2017/02/19/understand-your-clients/">understand</a> your workflows.
+                        </p>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 col-sm-12 wow fadeIn" data-wow-delay=".7s">
+                        <div class="card">
+                            <div class="card-block">
+                                <h6>The show me what you got package</h6>
+                                <p>To get you started, I will analyze your website / product idea / MVP for a small fixed rate. Use the results as you like. No strings attached!</p>
+                                <p>
+                                    I'll explain my findings in an exclusive call and you will receive a written overview, usually containing remarks regarding
+                                    <ul>
+                                      <li>Technology and architecture</li>
+                                      <li>Design and visual impression</li>
+                                      <li>Usability</li>
+                                      <li>Overall user experience</li>
+                                    </ul>
+                                </p>
+                                <a href="https://devicezero.typeform.com/to/TFT6ZD" target="_blank" rel="noopener" class="btn btn-primary mr-2 mb-2 page-scroll">let's have a chat, say hello!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
-      </div>
 
-  <footer>
-    <div class="container">
-      <div class="single">
-        <h1 class="text_center">Jonas Kröger</h1>
-        <div class="icons_social text_center">
-          <a href="https://twitter.com/jonaskroeger" target="_blank" rel="noopener"><i class="icon ion-logo-twitter"></i></a>
-          <a href="https://www.facebook.com/devicezero" target="_blank" rel="noopener"><i class="icon ion-logo-facebook"></i></a>
-          <a href="https://www.instagram.com/devicezero" target="_blank" rel="noopener"><i class="icon ion-logo-instagram"></i></a>
-          <a href="mailto:jk@devicezero.me"><i class="icon ion-ios-send"></i></a>
-        </div>
-        <h3 class="text_center text_cursor" onclick="toggleHidden('imprint-text')">Impressum / Datenschutz</h3>
-        <div id="imprint-text" class="hidden">
+        <!--services-->
+        <section class="bg-faded" id="services">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
+                        <h2 class="text-primary">Services</h2>
+                        <p class="lead mt-4">
+                            Let's see if I can help you with that!
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5 text-center">
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                    <em class="ion-chatbubble-working icon-md"></em>
+                                </div>
+                                <h6>Product Management</h6>
+                                <p>
+                                    As a experienced product manager I can help translating between clients, designers and developers (and more humans!).🙃
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                    <em class="ion-ios-star-outline icon-md"></em>
+                                </div>
+                                <h6>Help build your MVPs</h6>
+                                <p>
+                                    Say you have a product idea and need someone to build a prototype or MVP. I can help you myself with both my own expertise and a network of developers and designers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                    <em class="ion-code-working icon-md"></em>
+                                </div>
+                                <h6>Web Development</h6>
+                                <p>
+                                    Node.js, CouchDB, Git, HTML, CSS, Angular, VueJS or Docker are my friends as well!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                    <em class="ion-ios-people-outline icon-md"></em>
+                                </div>
+                                <h6>Consulting</h6>
+                                <p>
+                                    Sometimes you need an outside opinion. It is important to listen to people first and try to understand their problems to find real working solutions with them. And I don't stop when it's getting uncomfortable!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                    <em class="ion-happy-outline icon-md"></em>
+                                </div>
+                                <h6>Happy Developers</h6>
+                                <p>
+                                    I have been working with developers all my professional life. Let me check your current workflow and see if we can improve. Both for better results and happier people.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="icon-box">
+                                    <em class="ion-erlenmeyer-flask icon-md"></em>
+                                </div>
+                                <h6>Getting ready</h6>
+                                <p>
+                                   The transitioning processes into digital workflows can be hard. I have helped companies making the switch and improve their everyday communication and work with the help of digital solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </section> <section class="bg-orange pt-0">
+          <div class="container">
+              <div class="row d-md-flex text-center wow fadeIn">
+                  <div class="col-md-6 offset-md-3 col-sm-10 offset-sm-1 col-xs-12">
+                      <h5 class="text-primary">Others about me</h5>
+                      <blockquote>
+                        »Without Jonas, our platform would be years behind. Since he started working with us, our processes, communication, quality and overall progress have improved to a great extent.«
+                      </blockquote>
+
+                      <blockquote>
+                        »Even under high time pressure, complex tasks and ambitious clients Mr. Kröger never lost the overview of the whole project and was responsible for an ongoing positive progress.«
+                      </blockquote>
+
+                      <blockquote>
+                        »Due to his good communication skills, he was able to integrate into our team without any problems.«
+                      </blockquote>
+
+                      <blockquote>
+                        »Jonas is an excellent skilled person. He is self-critical, loyal, extremely flexible and very popular to all colleagues.«
+                      </blockquote>
+
+                      <blockquote>
+                        »Working with Jonas makes sure progress is made along the way. He always keeps the direction clear and is not afraid to ask painful questions which almost always lead to a better result for our processes.«
+                      </blockquote>
+
+                      <blockquote>
+                        »As a developer you need someone like Jonas. He is the perfect communicator between developers and customers. He always keeps track on progress and supports both sides without causing unnecessary negative pressure. It’s very beneficial to have someone like Jonas in your team as he truly understands how developers think and what they need.«
+                      </blockquote>
+
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+        <!--contact-->
+        <section class="bg-texture-collage p-0" id="contact">
+            <div class="container">
+                <div class="row d-md-flex text-white text-center wow fadeIn">
+                    <div class="col-sm-6 p-5">
+                        <p><em class="ion-ios-email-outline icon-md"></em></p>
+                        <p class="lead">jk@devicezero.me</p>
+                    </div>
+                    <div class="col-sm-6 p-5">
+                        <p><em class="ion-ios-location-outline icon-md"></em></p>
+                        <p class="lead">🌍 World, Earth</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+        <section class="bg-footer" id="connect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
+                        <h1>JONAS KRÖGER</h1>
+                        <p class="mt-4">
+                            <a href="https://twitter.com/jonaskroeger" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
+                            <a href="https://facebook.com/devicezero" target="_blank"><em class="ion-social-facebook text-facebook-alt icon-sm mr-3"></em></a>
+                            <a href="https://www.instagram.com/devicezero" target="_blank"><em class="ion-social-instagram text-instagram-alt icon-sm mr-3"></em></a>
+                            <a href="mailto:jk@devicezero.me"><em class="ion-paper-airplane text-google-alt icon-sm mr-3"></em></a>
+                        </p>
+                        <p class="pt-2 text-muted">
+                            Theme: &copy; 2017 Comply Theme. A Bootstrap 4 multipurpose theme by
+                            <a href="https://wireddots.com">Wired Dots</a>. Developed by <a href="https://twitter.com/attacomsian">@attacomsian</a>
+                        </p>
+
+                        <div class="imprint">
+                          <h4><a id="imprint-link">Impressum / Datenschutz</a></h4>
+
+                          <div id="imprint-text">
                             <h2>Angaben gem&auml;&szlig; &sect; 5 TMG:</h2> <p>Jonas Kröger <br /> Martin-Luther-Strasse 17<br /> 68623 Lampertheim</p> <h2> Kontakt:</h2> <p>Telefon: +4962069462755<br /> E-Mail: jk@devicezero.me</p> <h2>Umsatzsteuer:</h2> <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;27 a Umsatzsteuergesetz:<br /> DE313509812</p> <h2>Haftung f&uuml;r Inhalte</h2> <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen.</p> <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p> <h2>
 Haftung f&uuml;r Links</h2> <p>Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p> <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p> <h2> Urheberrecht</h2> <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet.</p> <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 <h2>Datenschutzerklärung</h2><h3 id="dsg-general-intro"></h3><p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).<br>
@@ -268,23 +351,23 @@ Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse d
 Sofern die Nutzer Mitglieder der Plattform Twitter sind, kann Twitter den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten (<a target="_blank" href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active">https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active</a>). Datenschutzerklärung: <a target="_blank" href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a>, Opt-Out: <a target="_blank" href="https://twitter.com/personalization">https://twitter.com/personalization</a>.</span></p><p></p><h3 id="dsg-thirdparty-instagram">Instagram</h3><p></p><p><span class="ts-muster-content">Innerhalb unseres Onlineangebotes können Funktionen und Inhalte des Dienstes Instagram, angeboten durch die Instagram Inc., 1601 Willow Road, Menlo Park, CA, 94025, USA, eingebunden werden. Hierzu können z.B. Inhalte wie Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte dieses Onlineangebotes innerhalb von Instagram teilen können. Sofern die Nutzer Mitglieder der Plattform Instagram sind, kann Instagram den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Datenschutzerklärung von Instagram: <a target="_blank" href="http://instagram.com/about/legal/privacy/">http://instagram.com/about/legal/privacy/</a>.  </span></p><a href="https://datenschutz-generator.de" class="dsg1-5" rel="nofollow" target="_blank">Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a>
                           </div>
 
-                          <p class="text_center text_softened">
-                            Design inspired by themes of <a rel="noopener" target="_blank" href="https://wireddots.com/">Wired Dots</a>.
-                            Developed by <a rel="noopener" target="_blank" href="https://twitter.com/attacomsian">@attacomsian</a>
-                          </p>
+                        </div>
 
-      </div>
-    </div>
-  </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="cookieconsent" class="hidden">
-    This website uses cookies. 🍪 <small>(hmmm… cookies.)</small>
-    <a onclick="setCookieconsent()" class="button">ok</a>
-  </section>
+        <section id="cookieconsent" class="hidden">
+          This website uses cookies. 🍪 <small>(hmmm… cookies.)</small>
+          <a onclick="setCookieconsent()" class="btn btn-primary mr-2 mb-2 page-scroll">ok</a>
+        </section>
 
-
-  <script>
-  var setCookieconsent=function(){localStorage.setItem("cookieconsent",!0),document.getElementById("cookieconsent").classList.add("hidden")},toggleHidden=function(e){document.getElementById(e).classList.contains("hidden")?document.getElementById(e).classList.remove("hidden"):document.getElementById(e).classList.add("hidden")},closeMenu=function(){document.getElementById("close").style.display&&(document.getElementById("logo").style.display="block",document.getElementById("open").style.display="inline",document.getElementById("close").style.display="none",document.getElementById("nav_links").style.display="none")};document.getElementById("open").addEventListener("click",function(){document.getElementById("logo").style.display="none",document.getElementById("open").style.display="none",document.getElementById("close").style.display="inline",document.getElementById("nav_links").style.display="block"}),document.getElementById("close").addEventListener("click",function(){closeMenu()}),localStorage.getItem("cookieconsent")||(document.getElementById("nav_links").style.display="none",document.getElementById("cookieconsent").classList.remove("hidden"));
-  </script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
