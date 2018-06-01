@@ -35,7 +35,7 @@ div.contrast {
   color: map-get($colors, black);
 
   h2 {
-    color: map-get($colors, primary);
+    color: map-get($colors, black);
   }
 }
 
@@ -68,7 +68,7 @@ ul li {
 }
 
 .text_softened {
-  opacity: .2;
+  // opacity: .2;
 }
 
 .text_cursor {

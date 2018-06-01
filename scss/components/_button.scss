@@ -4,7 +4,7 @@ a.button {
   padding: map-get($padding, small) map-get($padding, big);
   margin: map-get($margin, small);
   border: 1px solid map-get($colors, white);
-  color: white;
+  color: map-get($colors, black);
   @include border-radius(5px);
   box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
   text-decoration: none;
